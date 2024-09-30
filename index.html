@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rotaract Club</title>
+    <link rel="icon" type="image/x-icon" href="./res/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <li style="background-color: #24283B;"><a href="./index.html" style="height: 58.4px; width: 100px;"><img
+                    src="./res/logo.png" class="logo-img">
+                <h3 class="name">Rotaract Club Of Balasaheb
+                    Apte <br>College Of Law</h3>
+            </a></li>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./committeeMembers.html">Committee Members</a></li>
+            <li><a href="./contactUs.html">Contact Us</a></li>
+            <li style="background-color: #24283B;"><a style="color: #fff;"
+                    href="https://forms.gle/PMBvLq9DdbkKNan76">Join Now!</a></li>
+        </ul>
+    </header>
+
+
+    <!-- Carousel -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="./res/safar.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./res/seva_new.JPG" style="width:100%">
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+    </script>
+
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+
+        <div class="main">
+            <section><b>About Us</b></section>
+        </div>
+
+        <div class="main">
+            <p class="txt1"> A group of young, enthusiastic changemakers, we are the Youth Wing of Rotary Club of Mumbai
+                Shivaji Park dedicated towards making a positive impact in our community. Over the past 12 years, we
+                have managed to leave our mark through numerous projects that have not only brought joy to those we
+                serve but also helped foster a spirit of collaboration and growth among our members.
+            </p>
+            <p class="txt1">
+                Our mission extends beyond welfare initiatives; we prioritize the holistic development of our youth.
+                Through various initiatives, we empower our members to reach their professional goals while cultivating
+                leadership skills and social responsibility.
+            </p>
+            <p class="txt1">
+                Our commitment to excellence has not gone unnoticed—over the years, we have been honored with several
+                accolades, including ranking among the Top 25 Rotaract Clubs out of over 150 clubs in Mumbai.
+            </p>
+            <p class="txt1">
+                We invite you to join us in our journey of service, growth, and community transformation!
+            </p>
+            <br>
+
+        </div>
+
+        <div class="main">
+            <section><b>What we do</b></section>
+        </div>
+
+        <div class="main">
+            <div class="section-scr">
+                <!-- scrool-start -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide--one">
+                            <div>
+                                <h2>Seva Mahotsav</h2>
+                                <p>
+                                    We started the year off with a week-long community service project, where we
+                                    conducted
+                                    10 different
+                                    activities including Baghban (Visit to an old age home), Annadaan (food donation
+                                    drive),
+                                    Stress
+                                    Management Workshop and many others!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--two">
+                            <div>
+                                <h2>#ZeroTolerance</h2>
+                                <p>
+                                    In the light of recent events, we conducted an awareness workshop on sexual violence
+                                    in
+                                    collaboration
+                                    with Majlis in an effort to educate our members on the subject.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide swiper-slide--three">
+                            <div>
+                                <h2>Safarnama</h2>
+                                <p>
+                                    A beautiful monsoon trek to Kothaligad Fort in Karjat which was equally as rewarding
+                                    as
+                                    it was scenic.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- scrool-end -->
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+        <script src="./script.js"></script>
+
+        <div class="main">
+            <section><b>Faces behind the Magic</b></section>
+        </div>
+
+        <div class="main">
+            <p class="txt1">
+                Our team of core members and board of directors consists of 17 bold and high spirited individuals who
+                are dedicated towards bringing their most innovative ideas to life. Presenting to you, the Unstoppable
+                RCBACL Team of 2024-25! </p>
+            <main class="cards">
+                <article class="card">
+                    <img src="./res/mehek.png" alt="Sample photo">
+                    <div class="text">
+                        <h3>Rtr. Mehek Pangakar</h3>
+                        <p>President</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./res/sam.png" alt="Sample photo">
+                    <div class="text">
+                        <h3>Rtr. Samruddhi Patil</h3>
+                        <p>Secretary</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./res/omkar.png" alt="Sample photo">
+                    <div class="text">
+                        <h3>Rtr. Omkar Kalundrekar</h3>
+                        <p>IPP and Treasurer</p>
+                    </div>
+                </article>
+            </main>
+        </div>
+
+        <div class="main">
+            <div class="container">
+                <div class="image">
+                    <img src="./res/join.png">
+                </div>
+                <div class="text">
+                    <h1>Come join us for an exciting time filled with fun, laughter, and meaningful connections as part
+                        of an inclusive Rotaract experience!</h1>
+                    <p>The Rotaract Club of Balasaheb Apte College of Law invites you to become a part of the most
+                        dynamic club on campus. Fill the form below and become a member TODAY!</p>
+                    <a href="https://forms.gle/PMBvLq9DdbkKNan76" target="_blank"><button
+                            style="padding: 20px 30px; background-color: #24283B; color: #fff;">Join Now</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div style="flex-basis: 30%">
+            <h2>About Us</h2>
+            <p>A group of young, enthusiastic changemakers, we are the Youth Wing of Rotary Club of Mumbai Shivaji Park
+                dedicated towards making a positive impact in our community. Over the past 12 years, we have managed to
+                leave our mark through numerous projects that have not only brought joy to those we serve but also
+                helped foster a spirit of collaboration and growth among our members.
+            </p>
+        </div>
+
+        <div style="flex-basis: 40%">
+            <h2>Contact Us</h2>
+            <h4>Phone No: 7400228808</h4>
+            <h4>Email: <a href="rtr.mehekpangarkar@gmail.com">rtr.mehekpangarkar@gmail.com</a></h4>
+            <h4>Address: </h4>
+            <p>N.M.Kale Marg, Gokhale Road South, Dadar West, Mumbai, Maharashtra 400028 </p>
+        </div>
+
+        <div style="flex-basis: 10%">
+            <h2>Quick Links</h2>
+            <h4><a href="https://forms.gle/PMBvLq9DdbkKNan76">Join Us</a></h4>
+            <h4><a href="google.com">Events</a></h4>
+            <h4><a href="google.com">Contact Us</a></h4>
+        </div>
+    </div>
+
+</body>
+
+</html>
